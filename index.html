@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>player</title>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center h-screen w-screen"
+      style="font-family: 'Shantell Sans', cursive"
+    >
+      <div class="w-[300px] h-[435px] bg-gray-200 rounded-lg shadow-lg">
+        <div class="flex flex-col items-center pt-4 space-y-2">
+          <h2
+            class="w-full p-2 text-center bg-amber-200 text-gray-600 text-lg font-bold"
+          >
+            PLAYER VS PLAYER
+          </h2>
+          <h3 class="text-xl font-semibold winningScore">
+            WINNING SCORE: <span>0</span>
+          </h3>
+        </div>
+        <form class="pt-4 flex space-x-3 justify-center">
+          <input
+            class="ring-2 ring-gray-500 outline-none rounded-lg p-2 focus:outline focus:outline-gray-400 transition-colors w-full"
+            placeholder="Determine score"
+          />
+          <button
+            class="p-2 bg-gray-400 rounded-lg text-gray-300 font-bold cursor-pointer hover:bg-gray-400 hover:text-gray-600 transition-colors"
+          >
+            SUBMIT
+          </button>
+        </form>
+        <div
+          class="flex justify-around items-center w-full mt-4 py-2 text-lg font-bold bg-pink-300"
+        >
+          <h2 class="p1Score text-center">Player-01 Score:<span>0</span></h2>
+          <h2 class="p2Score text-center">Player-02 Score:<span>0</span></h2>
+        </div>
+        <div class="pt-2 flex flex-col space-y-2">
+          <h2
+            class="p1 w-full p-2 text-center bg-gray-400 text-gray-600 text-lg font-bold hover:bg-gray-500 hover:text-gray-300 transition-colors cursor-pointer"
+          >
+            Player-01
+          </h2>
+          <h2
+            class="p2 w-full p-2 text-center bg-gray-400 text-gray-600 text-lg font-bold hover:bg-gray-500 hover:text-gray-300 transition-colors cursor-pointer"
+          >
+            Player-02
+          </h2>
+        </div>
+        <div class="pt-2 winner text-center">
+          <span
+            class="bg-purple-400 text-white text-center w-full text-lg font-bold h-[35px] text-center rounded-lg"
+          ></span>
+        </div>
+        <div class="flex w-full justify-center pt-4">
+          <button
+            class="resetBtn px-6 py-2 bg-gray-400 text-gray-300 rounded-lg w-1/2 text-center text-lg font-bold cursor-pointer hover:bg-gray-400 hover:text-gray-600 transition-colors"
+          >
+            RESET
+          </button>
+        </div>
+        <div class="mt-6">Developed by: Anamul Haque</div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
